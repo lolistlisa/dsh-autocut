@@ -1,0 +1,5 @@
+# Optional: local MusicGen generation (autocut_sound generate=true)
+# Large download; skip if you only plan BGM from local files or Jamendo.
+torch>=2.4
+torchaudio>=2.4
+audiocraft>=1.3

@@ -1,0 +1,10 @@
+# Core runtime dependencies
+numpy>=2.0
+faster-whisper>=1.1
+
+# JianyingPro (剪映) draft export requires encrypted-draft support.
+# The release on PyPI does NOT provide JianyingDraftCryptoCodec and writes
+# plaintext drafts, which JianyingPro 11.x cannot open. Install the fork:
+#   python -m pip install "https://codeload.github.com/aoguai/pyJianYingDraft/zip/refs/heads/main"
+# The direct reference below does the same thing when installing this file.
+pyJianYingDraft @ https://codeload.github.com/aoguai/pyJianYingDraft/zip/refs/heads/main

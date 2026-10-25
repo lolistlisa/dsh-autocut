@@ -1,0 +1,59 @@
+{
+  "name": "dsh-autocut",
+  "version": "0.3.0",
+  "description": "DeepSeek-assisted, non-destructive long-form video editing for DeepSeek Harness: script segmentation, online/local asset research, subtitle timing, BGM/SFX planning, OTIO timeline export, and encrypted JianyingPro (剪映) draft export.",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib",
+    "scripts",
+    "requirements.txt",
+    "requirements-music.txt",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "pack": "npm pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolistlisa/dsh-autocut.git"
+  },
+  "homepage": "https://github.com/lolistlisa/dsh-autocut#readme",
+  "bugs": {
+    "url": "https://github.com/lolistlisa/dsh-autocut/issues"
+  },
+  "author": "lolistlisa",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "video-editing",
+    "autocut",
+    "jianying",
+    "capcut",
+    "opentimelineio"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "dsh": ">=0.2.0-0 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  },
+  "license": "MIT"
+}
